@@ -26,6 +26,10 @@ module Main
       5
     end
 
+    def recent_posts
+      store._blog_posts.limit(5)
+    end
+
     private
 
     # The main template contains a #template binding that shows another
